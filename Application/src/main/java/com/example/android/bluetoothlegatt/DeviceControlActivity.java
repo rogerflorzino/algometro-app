@@ -199,7 +199,7 @@ public class DeviceControlActivity extends Activity {
                 byte[] rxBytes = bluetoothGattCharacteristicHM_10.getValue();
 
                 try {
-                    rxBytes = (editTextMesssage.getText().toString()).getBytes("UTF-8");
+                    rxBytes = (editTextMesssage.getText().toString()+"~").getBytes("UTF-8");
                     editTextMesssage.setText("");
                 } catch (UnsupportedEncodingException e) {
                     e.printStackTrace();
